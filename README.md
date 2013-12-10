@@ -12,9 +12,7 @@ Add this to your Gemfile:
 
     gem 'indexable'
 
-You will also need to add this to `config/application.rb`.
-
-    config.middleware.use Rack::Indexable
+That's it, we're done!
 
 #### Rack
 

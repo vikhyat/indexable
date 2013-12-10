@@ -1,8 +1,8 @@
-require 'phantomjs'
 require 'rack/request'
+require 'indexable/phantomjs'
 
-module Rack
-  class Indexable
+module Indexable
+  class Middleware
     CRAWLER_USER_AGENTS = [
       /^Twitterbot/, /^curl/, /Googlebot/, /Mediapartners/, /Adsbot-Google/,
       /\(.*http(s|\(s\))?:\/\/.*\)/

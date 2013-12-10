@@ -14,7 +14,7 @@ class IndexableTest < Test::Unit::TestCase
   end
 
   def app
-    @app ||= Rack::Indexable.new(default_app)
+    @app ||= Indexable::Middleware.new(default_app)
   end
 
   def test_crawler_detection
