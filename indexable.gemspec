@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'indexable'
-  s.version = '0.0.3'
+  s.version = '0.0.4'
   s.date = '2013-12-10'
 
   s.homepage = 'https://github.com/vikhyat/indexable'
