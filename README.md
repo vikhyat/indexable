@@ -1,6 +1,6 @@
 # Indexable
 
-Rack middleware that that executes javascript before serving pages to crawlers.
+Drop-in Rack middleware that that executes javascript before serving pages to crawlers.
 
 ### Installation
 
@@ -15,7 +15,7 @@ For regular Rack applications, use the following:
     require 'indexable'
     use Rack::Indexable
 
-There is an example Rack application in the `example/` directory, which is also deployed to [Heroku](http://indexable.herokuapp.com/).
+There is an example Rack application in the `example/` directory.
 
 **(Optional)** Adding the following meta tag to the head section of your pages will opt you into the [AJAX crawling scheme](https://developers.google.com/webmasters/ajax-crawling/docs/specification), which the middleware uses in addition to checking the user agent in order to determine whether a request is coming from a crawler.
 
