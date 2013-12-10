@@ -10,12 +10,14 @@ If you are using Rails, you will need to add the following to `config/applicatio
 
     config.middleware.use Rack::Indexable
 
-(TODO Add Rack instruction.)
+For regular Rack applications, use the following:
+
+    require 'indexable'
+    use Rack::Indexable
+
+There is an example Rack application in the `example/` directory, which is also deployed to [Heroku](http://indexable.herokuapp.com/).
 
 **(Optional)** Adding the following meta tag to the head section of your pages will opt you into the [AJAX crawling scheme](https://developers.google.com/webmasters/ajax-crawling/docs/specification), which the middleware uses in addition to checking the user agent in order to determine whether a request is coming from a crawler.
 
     <meta name="fragment" content="!">
 
-### Dependencies
-
-* PhantomJS 1.9
