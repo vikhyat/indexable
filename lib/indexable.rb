@@ -1,4 +1,4 @@
-require 'phantomjs.rb'
+require 'phantomjs'
 require 'rack/request'
 
 module Rack

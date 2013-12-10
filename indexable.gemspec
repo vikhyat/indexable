@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'indexable'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.date = '2013-12-10'
 
   s.homepage = 'https://github.com/vikhyat/indexable'
@@ -9,8 +9,7 @@ Gem::Specification.new do |s|
   s.email = 'c@vikhyat.net'
   s.license = 'MIT'
 
-  s.files = ['lib/indexable.rb', 'lib/render_page.js']
+  s.files = ['lib/indexable.rb', 'lib/render_page.js', 'lib/phantomjs.rb']
 
   s.add_dependency 'rack'
-  s.add_dependency "phantomjs.rb", ["~> 2.0"]
 end
