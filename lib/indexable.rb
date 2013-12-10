@@ -40,7 +40,7 @@ module Rack
         file.close
         begin
           url = Rack::Request.new(env).url
-          content = [Phantomjs.run(script, file.path, url)]
+          content = [Phantomjs.new(script, file.path, url).run]
           status = 500 if content[0] == "Couldn't render page... orz."
         ensure
           file.unlink

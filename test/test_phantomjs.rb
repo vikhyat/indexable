@@ -5,7 +5,7 @@ class PhantomjsTest < Test::Unit::TestCase
     file = Tempfile.new('phantomjstest')
     file.write("console.log('test');phantom.exit();")
     file.close
-    assert_equal 'test', Phantomjs.run(file.path).strip
+    assert_equal 'test', Phantomjs.new(file.path).run.strip
     file.unlink
   end
 
@@ -13,7 +13,9 @@ class PhantomjsTest < Test::Unit::TestCase
     file = Tempfile.new('phantomjstest')
     file.write("console.log('this will not exit');")
     file.close
-    assert_equal "Couldn't render page... orz", Phantomjs.run(file.path)
+    phantomjs = Phantomjs.new(file.path)
+    phantomjs.timeout = 1
+    assert_equal "Couldn't render page... orz.", phantomjs.run
     file.unlink
   end
 end
