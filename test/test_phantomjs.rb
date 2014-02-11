@@ -1,4 +1,4 @@
-require 'phantomjs'
+require 'indexable/phantomjs'
 
 class PhantomjsTest < Test::Unit::TestCase
   def test_phantomjs_run
