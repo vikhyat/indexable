@@ -1,6 +1,6 @@
 require 'indexable'
 
-use Rack::Indexable
+use Indexable::Middleware
 
 app = lambda do |env|
   [

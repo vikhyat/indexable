@@ -17,7 +17,7 @@ That's it, we're done!
 #### Rack
 
     require 'indexable'
-    use Rack::Indexable
+    use Indexable::Middleware
 
 There is an example Rack application in the `example/` directory.
 
