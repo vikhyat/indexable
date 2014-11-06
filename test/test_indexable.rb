@@ -1,9 +1,9 @@
 require 'indexable'
 
-require 'test/unit'
+require 'minitest/autorun'
 require 'rack/test'
 
-class IndexableTest < Test::Unit::TestCase
+class IndexableTest < Minitest::Test
   include Rack::Test::Methods
 
   def default_app
