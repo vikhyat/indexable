@@ -4,7 +4,7 @@ Drop-in Rack middleware that that executes javascript before serving pages to cr
 
 ### Installation
 
-You will need to install PhantomJS. We use the network requst abort functionality that was added in version 1.9, so lower versions will not work. You can check the installed version of PhantomJS by running `phantomjs -v`.
+You will need to install PhantomJS. We use the network request abort functionality that was added in version 1.9, so lower versions will not work. You can check the installed version of PhantomJS by running `phantomjs -v`.
 
 #### Rails
 
